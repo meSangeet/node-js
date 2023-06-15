@@ -23,4 +23,7 @@ Real time chat applications
 When not to use node.js ?
 
 We should avoid using node js while making CPU intensive applications.
+
+
+to run the node js files write `node fileName'
 */

@@ -1,0 +1,1 @@
+trying the synchronous file writing function of the fs moduleappended data
