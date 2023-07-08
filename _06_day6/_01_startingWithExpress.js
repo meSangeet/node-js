@@ -23,8 +23,18 @@ delete - delete
 
 app.get('/', (req,res) => {
     // res.sendFile('./<html>fileaddress', {root: __dirname});
-
 })
+
+app.get('/route1', (req,res) => {
+    // res.sendFile('./<html>fileaddress', {root: __dirname});
+})
+
+app.get('/route2', (req,res) => {
+    // res.sendFile('./<html>fileaddress', {root: __dirname});
+})
+
+//we can see how easy it is to route in express js while in node js we have to use multiple if else statements to route from pure node js
+
 
 app.listen(8000, () => {
     console.log('server listening at the port 80000');
