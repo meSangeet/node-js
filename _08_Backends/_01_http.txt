@@ -1,0 +1,64 @@
+HTTP
+
+It is a protocil that is defined for machines to communicate.
+Specifically for the websites it is most common way for your website's
+frontend to talk to its backend.
+Some code that follows the HTTP protocol is able to communicate with 
+clients(browsers/mobile apps etc).
+
+In the end its the client throwing some information at a server. Server 
+doing something the client sends, server responding back with the 
+final result.
+
+Things clients need to worry about to send a request to server
+
+1. Protocol (HTTP/HTTPS)
+2. Address (URL/IP/PORT)
+3. Routes
+4. Headers, Body, Query Params
+5. Method
+
+Things server needs wo worry about while responding back
+
+1. Response Headers
+2. Response Body
+3. Status Codes
+
+Generally this is how a communication would look like
+
+Client Side 
+
+1. https://chat.openai.com/backend-api/conversation
+
+    https -> protocol 
+    chat.openai.com -> url 
+    last part -> route 
+
+2. Header / Authorization Header 
+
+    Cookie -> to let the server know that who is logged in 
+
+3. Method 
+
+    GET/POST etc -> to decide the method how to send this information 
+
+
+Server Side 
+
+server sends back 
+1. response Body
+2. response header 
+3. status code 
+
+Things that happen in your browser after you fire this request 
+
+1. Browser parses the URL 
+2. Does a DNS lookup (converts url to IP)
+3. Establishes a connection to the IP (does handshake)
+
+What is DNS resolution ? 
+
+URLs are just like contact in your phone. In the end, they map to an IP
+If you ever buy a URL of your own, you will need to point it to the IP
+of your server.
+
